@@ -1,39 +1,51 @@
 function ItemDetails() {
   this.items = [{
     name: 'High',
-    description: 'Artwork'
+    description: 'Artwork',
+    active: false
   }, {
     name: 'Low',
-    description: 'Word'
+    description: 'Word',
+    active: false
   }, {
     name: 'Right',
-    description: 'Powerpoint'
+    description: 'Powerpoint',
+    active: false
   }, {
     name: 'Left',
-    description: 'Excel'
+    description: 'Excel',
+    active: false
   }, {
     name: 'High1',
-    description: 'Image'
+    description: 'Image',
+    active: false
   }, {
     name: 'Low1',
-    description: 'PDF'
+    description: 'PDF',
+    active: false
   }, {
     name: 'Right1',
-    description: 'Video'
+    description: 'Video',
+    active: false
   }, {
     name: 'Left1',
-    description: 'Powerpoint'
+    description: 'Powerpoint',
+    active: false
   }, {
     name: 'High2',
-    description: 'Video'
+    description: 'Video',
+    active: false
   }, {
     name: 'Low2',
-    description: 'PDF'
+    description: 'PDF',
+    active: false
   }, {
     name: 'Right2',
-    description: 'Excel'
+    description: 'Excel',
+    active: false
   }, {
     name: 'Left2',
-    description: 'Word'
+    description: 'Word',
+    active: false
   }]
 }

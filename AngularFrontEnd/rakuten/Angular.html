@@ -24,6 +24,15 @@
         angular.module('myApp', []).controller('MainCtrl', function MainCtrl($scope) {
         $scope.itemTest = "spawn";        
         $scope.items = new ItemDetails();
+        $scope.myFunction = function(value) {
+            if (value === "All") {
+                $scope.items.items.forEach(x => x.active = true); 
+            }
+            else {
+                $scope.items.items.forEach(x => x.active = false);    
+                $scope.items.items.filter(x => x.description === value).forEach(x => x.active = true);
+            }
+        };
     });
     </script>
     <script>
@@ -61,36 +70,36 @@
                     
             </div>
             <div class="col-md-1 button-color">
-                All
+                <span class="button-filter" ng-click="myFunction('All')">All</span>
             </div>
             <div class="col-md-1 button-color">
-               Word     
+                <span class="button-filter" ng-click="myFunction('Word')">Word</span>                    
             </div>
             <div class="col-md-1 button-color">
-               Excel     
+                <span class="button-filter" ng-click="myFunction('Excel')">Excel</span>              
             </div>
             <div class="col-md-1 button-color">
-               Powerpoint     
+                <span class="button-filter" ng-click="myFunction('Powerpoint')">Powerpoint</span>                  
             </div>
             <div class="col-md-1 button-color">
-               Image     
+                <span class="button-filter" ng-click="myFunction('Image')">Image</span>        
             </div>
             <div class="col-md-1 button-color">
-               PDF     
+                <span class="button-filter" ng-click="myFunction('PDF')">PDF</span>           
             </div>
             <div class="col-md-1 button-color">
-               Video     
+                <span class="button-filter" ng-click="myFunction('Video')">Video</span>               
             </div>            
             <div class="col-md-2">
                     
             </div>
         </div>
         <div class="row padding">
-            <div ng-repeat="it in items.items track by $index">
-                <div class="col-md-1 margin">
-                
+            <div  ng-repeat="it in items.items track by $index">
+                <div class="col-md-1 margin" >
+                   
                 </div>
-                <div class="col-md-2 border margin">            
+                <div class="col-md-2 border margin" ng-class="{ 'active': it.active }">            
                     <div class="content">
                         <item-detail item="it"></item-detail>
                     </div>
@@ -103,18 +112,7 @@
         <footer>
             <img class="footer-logo" src="images/celgene-logo.png"><br /> 
         </footer>
-    </div> 
-    <!--<script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope, $location) {
-            $scope.hero = "spawn";
-            this.hero = {
-                name: 'Spawn'
-            };
-        });
-    </script>-->
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
