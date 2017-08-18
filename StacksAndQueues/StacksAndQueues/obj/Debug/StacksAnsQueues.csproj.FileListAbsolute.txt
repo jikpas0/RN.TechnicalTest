@@ -1,0 +1,7 @@
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.exe.config
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.exe
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.pdb
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.csprojResolveAssemblyReference.cache
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.csproj.CoreCompileInputs.cache
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.exe
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.pdb

@@ -1,0 +1,13 @@
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.exe.config
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.exe
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\bin\Debug\StacksAnsQueues.pdb
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAndQueues.csproj.CoreCompileInputs.cache
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.exe
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAnsQueues.pdb
+C:\Users\jikpa\source\repos\StacksAnsQueues\StacksAnsQueues\obj\Debug\StacksAndQueues.csprojResolveAssemblyReference.cache
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\bin\Debug\StacksAndQueues.exe.config
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\bin\Debug\StacksAndQueues.exe
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\bin\Debug\StacksAndQueues.pdb
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\obj\Debug\StacksAndQueues.csproj.CoreCompileInputs.cache
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\obj\Debug\StacksAndQueues.exe
+C:\Users\jikpa\source\repos\StacksAndQueues\StacksAndQueues\obj\Debug\StacksAndQueues.pdb

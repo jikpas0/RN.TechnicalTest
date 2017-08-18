@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Celgene</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.scss">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>  
+    <script src="itemDetails.js"></script>
+    <script>
+        'use strict';
+        angular.module('myApp', []).controller('MainCtrl', function MainCtrl($scope) {
+        $scope.itemTest = "spawn";        
+        $scope.items = new ItemDetails();
+    });
+    </script>
+    <script>
+        'use strict';
+        angular.module('myApp').component('itemDetail', {        
+        template: '<span>Name: {{$ctrl.item.name}}</span><br /><p>Description: {{$ctrl.item.description}}</p>',
+        bindings: {
+            item: '='
+        }
+        });
+    </script>    
+  </head>
+  <body ng-app="myApp">
+    <div class="container" ng-controller="MainCtrl as ctrl" >
+        <header class="row">
+            <div class="logo">
+                <img class="image-logo" src="images/logo.svg"><br />             
+                <p>MCL EU Toolkit</p>
+                <p><input class="filter" type="textbox" /></p>
+            </div>
+            <div>
+                <img class="header-belt" src="images/orange-belt.png">
+            </div>            
+        </header>
+        <div class="row" style="padding-top:30px">
+            <div class="col-md-4">
+            
+            </div>
+            <div class="col-md-4">
+            <span class="centre-title">FILTER BY FILE TYPE</span>
+            </div>
+        </div>
+        <div class="row" style="padding-top:10px">
+            <div class="col-md-2">
+                    
+            </div>
+            <div class="col-md-1 button-color">
+                All
+            </div>
+            <div class="col-md-1 button-color">
+               Word     
+            </div>
+            <div class="col-md-1 button-color">
+               Excel     
+            </div>
+            <div class="col-md-1 button-color">
+               Powerpoint     
+            </div>
+            <div class="col-md-1 button-color">
+               Image     
+            </div>
+            <div class="col-md-1 button-color">
+               PDF     
+            </div>
+            <div class="col-md-1 button-color">
+               Video     
+            </div>            
+            <div class="col-md-2">
+                    
+            </div>
+        </div>
+        <div class="row padding">
+            <div ng-repeat="it in items.items track by $index">
+                <div class="col-md-1 margin">
+                
+                </div>
+                <div class="col-md-2 border margin">            
+                    <div class="content">
+                        <item-detail item="it"></item-detail>
+                    </div>
+                    <div class="full-width">  
+                        <img class="lower-belt" src="images/orange-belt.png">
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img class="footer-logo" src="images/celgene-logo.png"><br /> 
+        </footer>
+    </div> 
+    <!--<script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $location) {
+            $scope.hero = "spawn";
+            this.hero = {
+                name: 'Spawn'
+            };
+        });
+    </script>-->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
